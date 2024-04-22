@@ -1,0 +1,16 @@
+﻿@model Person
+
+<h2>Age Calculator</h2>
+<p>Please enter your name and age. Our system will calculate if you are able to drink or drive yet</p>
+
+<form action="@Url.Action("Result", "Home")" method="post">
+    <div>
+        <label for="Age">Age:</label>
+        <input type="text" name="Age" />
+    </div>
+    <div>
+        <label for="UserName">Name:</label>
+        <input type="text" name="UserName" />
+    </div>
+    <input type="submit" value="Submit" />
+</form>
